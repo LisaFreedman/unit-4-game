@@ -2,10 +2,15 @@
 body {
 	margin: auto;
 }
+
+.container {
+	margin: 0 auto;
+	width: 50%;
+	font-family: Helvetica, Arial, sans-serif;
+}
 div{
 	background-color: white;
 	margin: 10px;
-	width: 25%
 }
 div{
 	border: solid 2px antiquewhite;
@@ -25,21 +30,30 @@ ul {
 	list-style: disc inside;
 	text-indent: 20px;
 }
+.color-options {
+	display: inline-block;
+}
+
+.color-options > li {
+	display: inline-block;
+}
+
 /* Specfic Elements*/
 div.header, div.gems{
 	background-color: yellow;
 }
-div.header, div.instructions{
-	width: 50%;
+
+.gems {
+	display: flex;
+	justify-content: center;
 }
+
 /* Classes */
 .numberToMatch, .winsAndLosses{
 	float: left;
-	width: 15%;
 	height: 60px;
 }
 .userTotal{
-	width: 15%;
 	height: 60px;
 }
 .gems{

@@ -34,14 +34,20 @@ $( document ).ready(function(){
   //adds the wins to the userTotal
   function yay(){
 
-    $('#numberWins').text(wins);
-    reset();
-    alert("Math whiz!  You won");
+    setTimeout(function() {
+      alert("Math whiz!  You won");
+      reset(); 
+    },3000)
+    
     wins++; 
-  }
+    $('#numberWins').text(wins);
+  } 
   //adds the losses to the userTotal
   function loser(){
-  alert ("Sorry, you lose!");
+    setTimeout(function() {
+      alert("Sorry, You lost");
+      reset(); 
+    },3000)
     losses++;
     $('#numberLosses').text(losses);
     reset()
